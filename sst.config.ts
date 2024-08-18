@@ -41,6 +41,9 @@ export default $config({
       architecture: 'arm64',
       environment: env,
       link: [stateMachineLinkable],
+      logging: {
+        retention: '1 month',
+      },
       memory: '512 MB',
       nodejs: {
         minify: true,
