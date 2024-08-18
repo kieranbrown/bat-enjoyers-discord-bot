@@ -1,0 +1,49 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['**']
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: aws-actions/configure-aws-credentials@v4.0.2
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: eu-west-2
+
+      - uses: actions/checkout@v4.1.7
+
+      - uses: pnpm/action-setup@v4.0.0
+
+      - uses: actions/setup-node@v4.0.3
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install
+
+      - run: pnpm exec sst telemetry disable
+
+      - env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          DISCORD_APP_ID: ${{ secrets.DISCORD_APP_ID }}
+          DISCORD_APP_PUBLIC_KEY: ${{ secrets.DISCORD_APP_PUBLIC_KEY }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_SPAWN_ALERT_CHANNEL_ID: ${{ secrets.DISCORD_SPAWN_ALERT_CHANNEL_ID }}
+          DISCORD_WINDOW_UPDATES_CHANNEL_ID: ${{ secrets.DISCORD_WINDOW_UPDATES_CHANNEL_ID }}
+          SST_STAGE: prod
+        run: |
+          pnpm exec sst deploy
+          pnpm exec sst shell -- tsx discord/register-commands.ts
