@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.0.1...v1.1.0) (2024-08-19)
+
+
+### Features
+
+* added time string validation ([#4](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/4)) ([865268f](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/865268f20675c39cc0615839469ce407c07cebbf))
+
 ## [1.0.1](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.0.0...v1.0.1) (2024-08-18)
 
 
