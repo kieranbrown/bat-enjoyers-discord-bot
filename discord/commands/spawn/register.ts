@@ -9,6 +9,7 @@ import { Resource } from 'sst';
 
 import {
   APIApplicationCommandOptionChoice,
+  APIInteractionResponse,
   InteractionResponseType,
   InteractionType,
   RESTPatchAPIChannelMessageJSONBody,
@@ -33,6 +34,11 @@ const locations = [
   { name: 'Unknown', value: 'Unknown' },
 ] as const satisfies APIApplicationCommandOptionChoice<string>[];
 
+const InvalidTimeInputResponse: APIInteractionResponse = {
+  type: InteractionResponseType.ChannelMessageWithSource,
+  data: { content: 'Invalid time, please enter a valid string between 00:00-23:59' },
+}
+
 const discord = new REST();
 discord.setToken(env.DISCORD_BOT_TOKEN);
 
@@ -55,6 +61,10 @@ export const execute: ExecuteCommand = async (interaction) => {
     time: string
     location: typeof locations[number]['value']
   };
+
+  if (/^([0-1]\d|2[0-3]):([0-5]\d)$/.test(time) === false) {
+    return InvalidTimeInputResponse;
+  }
 
   const [ hours, minutes ] = time.split(':').map(Number);
 
