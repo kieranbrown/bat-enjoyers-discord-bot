@@ -22,6 +22,7 @@ import {
 const creatures = [
   { name: 'Aeonaxx', value: 'Aeonaxx' },
   { name: 'Blood Seeker', value: 'Blood Seeker' },
+  { name: 'Server Reset', value: 'Server Reset' },
 ] as const satisfies APIApplicationCommandOptionChoice<string>[];
 
 const locations = [
@@ -78,7 +79,7 @@ export const execute: ExecuteCommand = async (interaction) => {
 
   const content = `${creature} ${location} ${time}`;
 
-  if (interaction.channel.id !== env.DISCORD_SPAWN_ALERT_CHANNEL_ID) {
+  if (interaction.channel.id !== env.DISCORD_SPAWN_ALERT_CHANNEL_ID && creature !== 'Server Reset') {
     // todo: this could be part of the step function to reduce invocation time here?
     await discord.post(Routes.channelMessages(env.DISCORD_SPAWN_ALERT_CHANNEL_ID), {
       body: { content } as RESTPostAPIChannelMessageJSONBody,
