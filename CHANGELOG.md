@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.1.0...v1.2.0) (2024-08-21)
+
+
+### Features
+
+* added server reset as a creature option ([#6](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/6)) ([d2d70f4](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/d2d70f4d1fd6abffc9e8f7508d5f6e346599d926))
+
 ## [1.1.0](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.0.1...v1.1.0) (2024-08-19)
 
 
