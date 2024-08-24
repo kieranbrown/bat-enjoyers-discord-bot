@@ -1,7 +1,8 @@
 /// <reference path="./.sst/platform/config.d.ts" />
 
+import { SpawnRegisteredSfn } from '@/packages';
 import { createEnv } from "@t3-oss/env-core";
-import { env } from './env';
+import { env } from '@/env';
 import { z } from "zod";
 
 const SSTEnvironment = createEnv({
@@ -34,17 +35,40 @@ export default $config({
     };
   },
   async run() {
-    const { stateMachineLinkable } = await import('@/packages/spawn-registered-sfn');
+    sst.Linkable.wrap(aws.sfn.StateMachine, (resource) => ({
+      properties: {
+        arn: resource.arn,
+      },
+      include: [
+        sst.aws.permission({
+          actions: ['states:StartExecution'],
+          resources: [resource.arn],
+        })
+      ]
+    }));
+
+    const eventConnection = new aws.cloudwatch.EventConnection("SpawnRegisteredSfn", {
+      name: `${$app.name}-${$app.stage}-discord-api`,
+      authorizationType: 'API_KEY',
+      authParameters: {
+        apiKey: {
+          key: 'Authorization',
+          value: `Bot ${env.DISCORD_BOT_TOKEN}`,
+        }
+      }
+    });
+
+    const spawnRegisteredStateMachine = new SpawnRegisteredSfn('SpawnRegisteredSfn', { eventConnection });
 
     const interaction = new sst.aws.Function('Interaction', {
       handler: 'app/interaction.handler',
       architecture: 'arm64',
       environment: env,
-      link: [stateMachineLinkable],
+      link: [spawnRegisteredStateMachine.nodes.sfn],
       logging: {
         retention: '1 month',
       },
-      memory: '512 MB',
+      memory: '768 MB',
       nodejs: {
         minify: true,
       },
