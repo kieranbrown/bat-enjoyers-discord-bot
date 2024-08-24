@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.0...v1.2.1) (2024-08-24)
+
+
+### Performance Improvements
+
+* defer spawn window update message to sfn ([#8](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/8)) ([c6ff946](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/c6ff9460a9c6f883b8c3ebc067af187c75b9025c))
+
 ## [1.2.0](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.1.0...v1.2.0) (2024-08-21)
 
 
