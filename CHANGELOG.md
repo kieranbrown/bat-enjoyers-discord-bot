@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.1...v1.2.2) (2024-09-02)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump the npm group across 1 directory with 6 updates ([#12](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/12)) ([9327305](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/9327305afd73b1d7e96f46538008b10940f46978))
+
 ## [1.2.1](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.0...v1.2.1) (2024-08-24)
 
 
