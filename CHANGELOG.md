@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.2](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.1...v1.2.2) (2025-01-26)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump the gha group across 1 directory with 2 updates ([#24](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/24)) ([6fc60a0](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/6fc60a0f680385ed39e6647a488b0bda49394bb0))
+* **deps:** bump the npm group across 1 directory with 6 updates ([#12](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/12)) ([9327305](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/9327305afd73b1d7e96f46538008b10940f46978))
+* **deps:** bump the npm group across 1 directory with 8 updates ([#30](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/30)) ([82cd70b](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/82cd70b50c10f2e6406ae09656b6fb711421d208))
+
 ## [1.2.1](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.0...v1.2.1) (2024-08-24)
 
 
