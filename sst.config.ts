@@ -92,7 +92,7 @@ export default $config({
         viewerProtocolPolicy: 'https-only',
       },
       domain: {
-        name: { prod: 'bat-enjoyers.bots.kswb.uk' }[$app.stage] ?? `bat-enjoyers.bots.sst-stage-${$app.stage}.kswb.uk`,
+        name: { prod: 'bat-enjoyers.bots.kswb.dev' }[$app.stage] ?? `bat-enjoyers.bots.sst-stage-${$app.stage}.kswb.dev`,
         dns: sst.cloudflare.dns({
           zone: SSTEnvironment.CLOUDFLARE_ZONE_ID,
         }),
