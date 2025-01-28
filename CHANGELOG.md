@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.3...v1.2.4) (2025-01-28)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump pulumi provider versions ([65c6b0e](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/65c6b0e413fe2bb808b67517bce2ccb20d7e98b2))
+
 ## [1.2.3](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.2...v1.2.3) (2025-01-28)
 
 
