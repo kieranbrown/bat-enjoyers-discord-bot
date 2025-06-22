@@ -1,21 +1,23 @@
 /// <reference path="./.sst/platform/config.d.ts" />
 
-import { SpawnRegisteredSfn } from '@/packages';
-import { createEnv } from "@t3-oss/env-core";
-import { env } from '@/env';
-import { z } from "zod";
+const getSSTEnvironment = async () => {
+  const { createEnv } = await import("@t3-oss/env-core");
+  const { z } = await import("zod");
 
-const SSTEnvironment = createEnv({
-  runtimeEnv: process.env,
-  emptyStringAsUndefined: true,
-  server: {
-    CLOUDFLARE_API_TOKEN: z.string().min(1),
-    CLOUDFLARE_ZONE_ID: z.string().min(1),
-  },
-});
+  return createEnv({
+    runtimeEnv: process.env,
+    emptyStringAsUndefined: true,
+    server: {
+      CLOUDFLARE_API_TOKEN: z.string().min(1),
+      CLOUDFLARE_ZONE_ID: z.string().min(1),
+    },
+  });
+}
 
 export default $config({
-  app(input) {
+  async app(input) {
+    const SSTEnvironment = await getSSTEnvironment();
+
     return {
       name: "bat-enjoyers-discord-bot",
       home: "aws",
@@ -35,6 +37,10 @@ export default $config({
     };
   },
   async run() {
+    const { SpawnRegisteredSfn } = await import('@/packages');
+    const SSTEnvironment = await getSSTEnvironment();
+    const { env } = await import('@/env');
+
     sst.Linkable.wrap(aws.sfn.StateMachine, (resource) => ({
       properties: {
         arn: resource.arn,
