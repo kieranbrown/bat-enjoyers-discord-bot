@@ -24,14 +24,14 @@ export default $config({
       providers: {
         aws: {
           region: "eu-west-2",
-          version: "6.67.0",
+          version: "6.83.0",
           defaultTags: {
             tags: {}, // todo: define these
           },
         },
         cloudflare: {
           apiToken: SSTEnvironment.CLOUDFLARE_API_TOKEN,
-          version: '5.49.0',
+          version: '6.3.1',
         },
       },
     };
