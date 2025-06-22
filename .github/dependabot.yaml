@@ -2,24 +2,25 @@ version: 2
 
 updates:
   - package-ecosystem: github-actions
-    directory: /
+    directories:
+      - "/"
+      - "/.github/actions/**"
+    schedule:
+      interval: weekly
+      day: monday
     groups:
       gha:
-        patterns:
-          - '*'
-    schedule:
-      interval: weekly
-      day: monday
-      time: "08:00"
-      timezone: Europe/London
+        update-types:
+          - minor
+          - patch
+
   - package-ecosystem: npm
     directory: /
-    groups:
-      npm:
-        patterns:
-          - '*'
     schedule:
       interval: weekly
       day: monday
-      time: "08:00"
-      timezone: Europe/London
+    groups:
+      npm:
+        update-types:
+          - minor
+          - patch
