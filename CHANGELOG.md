@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.6](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.5...v1.2.6) (2025-06-22)
+
+
+### Continuous Integration
+
+* fix deploy failures ([c0fdf5b](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/c0fdf5b54ab6f43862cc928638c4dd958318573b))
+
 ## [1.2.5](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.4...v1.2.5) (2025-06-22)
 
 
