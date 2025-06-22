@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.7](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.6...v1.2.7) (2025-06-22)
+
+
+### Miscellaneous Chores
+
+* bump sst provider versions ([e59fd18](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/e59fd1818d8939f834bfcb420aaa3a3b320906c2))
+
 ## [1.2.6](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.5...v1.2.6) (2025-06-22)
 
 
