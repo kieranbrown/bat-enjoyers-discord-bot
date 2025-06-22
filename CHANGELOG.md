@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.8](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.7...v1.2.8) (2025-06-22)
+
+
+### Code Refactoring
+
+* dependabot formatting ([b6d85ea](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/b6d85eaa587d569b596a0a8381019f2a5cb2d6da))
+
 ## [1.2.7](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.6...v1.2.7) (2025-06-22)
 
 
