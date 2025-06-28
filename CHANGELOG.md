@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.9](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.8...v1.2.9) (2025-06-28)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump the npm group with 3 updates ([#54](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/54)) ([1e2332d](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/1e2332d8afd74ca1172309092ed428f488dc8054))
+* **deps:** update pre-commit hooks ([#52](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/52)) ([06a97ab](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/06a97ab779e467d8b313d657bd9817cc7b84e514))
+
+
+### Continuous Integration
+
+* configure dependabot to run weekly on saturday at 05:00 ([fb4c0c0](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/fb4c0c0c2c9157d25599f1cfcc24c098150d0a0d))
+* fix invalid dependabot time config ([86c8187](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/86c81872a20a5cf4b6cc0f0e26f24cf83dde14c8))
+
 ## [1.2.8](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.7...v1.2.8) (2025-06-22)
 
 
