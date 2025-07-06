@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.10](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.9...v1.2.10) (2025-07-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump the npm group with 4 updates ([#55](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/55)) ([953fcb4](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/953fcb4ce7d9d6fa2b7015a7cf28860bf4b3d568))
+
+
+### Continuous Integration
+
+* fix deploy ([1c0636b](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/1c0636bdbb2ea803b8198abf1c725e40dc50da70))
+* refactor to use gha sha instead of tags ([693955e](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/693955e1e23d61607400de407cbcbba0e8261044))
+* refactor to use reusable workflows and tweaked concurrency ([2721197](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/2721197c4389d56d84a33d2252713ec570353272))
+* replace ubuntu-latest with ubuntu-24.04 ([63b86c2](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/63b86c2c17976716f123a8cd03816a048c9c5380))
+
 ## [1.2.9](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.8...v1.2.9) (2025-06-28)
 
 
