@@ -18,7 +18,7 @@
       "section": "Performance Improvements"
     },
     {
-      "type": "reverts",
+      "type": "revert",
       "section": "Reverts"
     },
     {
@@ -30,7 +30,7 @@
       "section": "Documentation"
     },
     {
-      "type": "styles",
+      "type": "style",
       "section": "Styles"
     },
     {
