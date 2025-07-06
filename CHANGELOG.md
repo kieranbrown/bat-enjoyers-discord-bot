@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.10...v1.3.0) (2025-07-06)
+
+
+### Features
+
+* added wouter's mum as a valid creature ([55af4d7](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/55af4d78f547ac778993b15df44d7665865c4c16))
+
 ## [1.2.10](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.9...v1.2.10) (2025-07-06)
 
 
