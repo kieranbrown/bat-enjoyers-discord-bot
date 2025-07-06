@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.11](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.10...v1.2.11) (2025-07-06)
+
+
+### Continuous Integration
+
+* fix typos in release-please changelog-sections ([df5aae9](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/df5aae990ad3bbe1c709ccb4a50e278282f22323))
+
 ## [1.2.10](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.9...v1.2.10) (2025-07-06)
 
 
