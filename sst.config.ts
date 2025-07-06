@@ -9,7 +9,6 @@ const getSSTEnvironment = async () => {
     emptyStringAsUndefined: true,
     server: {
       CLOUDFLARE_API_TOKEN: z.string().min(1),
-      CLOUDFLARE_ZONE_ID: z.string().min(1),
     },
   });
 }
@@ -99,9 +98,7 @@ export default $config({
       },
       domain: {
         name: { prod: 'bat-enjoyers.bots.kswb.dev' }[$app.stage] ?? `bat-enjoyers.bots.sst-stage-${$app.stage}.kswb.dev`,
-        dns: sst.cloudflare.dns({
-          zone: SSTEnvironment.CLOUDFLARE_ZONE_ID,
-        }),
+        dns: sst.cloudflare.dns(),
       },
       origins: [{
         customOriginConfig: {
