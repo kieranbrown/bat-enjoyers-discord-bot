@@ -19,6 +19,7 @@ const creatures = [
   { name: 'Aeonaxx', value: 'Aeonaxx' },
   { name: 'Blood Seeker', value: 'Blood Seeker' },
   { name: 'Server Reset', value: 'Server Reset' },
+  { name: 'Wouter\'s Mum', value: 'Wouter\'s Mum' },
 ] as const satisfies APIApplicationCommandOptionChoice<string>[];
 
 const locations = [
