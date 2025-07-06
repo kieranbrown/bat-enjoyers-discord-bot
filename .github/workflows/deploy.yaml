@@ -1,12 +1,11 @@
 name: Deploy
 
 on:
-  workflow_dispatch:
   push:
     tags: ['**']
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}
   cancel-in-progress: false
 
 jobs:
