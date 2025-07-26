@@ -4,12 +4,12 @@
     "@discordjs/builders": "^1.11.2",
     "@discordjs/rest": "^2.5.1",
     "@t3-oss/env-core": "^0.13.8",
-    "discord-api-types": "^0.38.16",
+    "discord-api-types": "^0.38.17",
     "tweetnacl": "^1.0.3",
     "zod": "^3.25.74"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.151",
+    "@types/aws-lambda": "^8.10.152",
     "@types/node": "^20.19.4",
     "sst": "^3.17.10",
     "tsx": "^4.20.3",
