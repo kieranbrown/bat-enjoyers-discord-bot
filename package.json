@@ -6,7 +6,7 @@
     "@t3-oss/env-core": "^0.13.8",
     "discord-api-types": "^0.38.18",
     "tweetnacl": "^1.0.3",
-    "zod": "^3.25.74"
+    "zod": "^4.0.14"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.152",
