@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.12](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.11...v1.2.12) (2025-08-09)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump @aws-sdk/client-sfn from 3.840.0 to 3.844.0 in the npm group ([#59](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/59)) ([79d7ba3](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/79d7ba30eceee42d4cd9fcf3dd4ba2b8aa022b28))
+* **deps:** bump @aws-sdk/client-sfn from 3.859.0 to 3.864.0 in the npm group ([#69](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/69)) ([797386a](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/797386a7c9a60ed185d94289ebe9ed94191b9399))
+* **deps:** bump @aws-sdk/client-sfn in the npm group ([797386a](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/797386a7c9a60ed185d94289ebe9ed94191b9399))
+* **deps:** bump @aws-sdk/client-sfn in the npm group ([79d7ba3](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/79d7ba30eceee42d4cd9fcf3dd4ba2b8aa022b28))
+* **deps:** bump aws-actions/configure-aws-credentials ([5df672e](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/5df672e2d188820f6f7f8f27d79b8d28d7699fd4))
+* **deps:** bump aws-actions/configure-aws-credentials from 4.2.1 to 4.3.1 in the gha group across 1 directory ([#68](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/68)) ([5df672e](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/5df672e2d188820f6f7f8f27d79b8d28d7699fd4))
+* **deps:** bump the npm group with 2 updates ([#63](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/63)) ([1ae8ff2](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/1ae8ff28825a6b8874703a664fc318dc505fbc09))
+* **deps:** bump the npm group with 3 updates ([#62](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/62)) ([cf40fc1](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/cf40fc110769193457bb8a2660c595a5038312d8))
+* **deps:** bump the npm group with 3 updates ([#66](https://github.com/kieranbrown/bat-enjoyers-discord-bot/issues/66)) ([aa27f17](https://github.com/kieranbrown/bat-enjoyers-discord-bot/commit/aa27f17bd04ad19171a31cdf86a4f056b1eadf11))
+
 ## [1.2.11](https://github.com/kieranbrown/bat-enjoyers-discord-bot/compare/v1.2.10...v1.2.11) (2025-07-06)
 
 
