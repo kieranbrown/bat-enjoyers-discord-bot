@@ -1,12 +1,12 @@
 {
   "dependencies": {
-    "@aws-sdk/client-sfn": "^3.888.0",
+    "@aws-sdk/client-sfn": "^3.893.0",
     "@discordjs/builders": "^1.11.3",
     "@discordjs/rest": "^2.6.0",
     "@t3-oss/env-core": "^0.13.8",
-    "discord-api-types": "^0.38.24",
+    "discord-api-types": "^0.38.26",
     "tweetnacl": "^1.0.3",
-    "zod": "^4.1.8"
+    "zod": "^4.1.9"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.152",
