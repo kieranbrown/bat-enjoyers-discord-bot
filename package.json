@@ -1,17 +1,17 @@
 {
   "dependencies": {
-    "@aws-sdk/client-sfn": "^3.971.0",
+    "@aws-sdk/client-sfn": "^3.975.0",
     "@discordjs/builders": "^1.13.1",
     "@discordjs/rest": "^2.6.0",
     "@t3-oss/env-core": "^0.13.10",
     "discord-api-types": "^0.38.37",
     "tweetnacl": "^1.0.3",
-    "zod": "^4.3.5"
+    "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.159",
+    "@types/aws-lambda": "^8.10.160",
     "@types/node": "^20.19.4",
-    "sst": "^3.17.25",
+    "sst": "^3.17.37",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
